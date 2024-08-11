@@ -2,7 +2,9 @@ import Link from "next/link";
 import MenuItem from "./MenuItem";
 import { AiFillHome } from "react-icons/ai";
 import { BsFillInfoCircleFill } from "react-icons/bs";
-import DarkModeSwitch from "./DarkModeSwitch";
+import dynamic from "next/dynamic";
+// import DarkModeSwitch from "./DarkModeSwitch";
+const DarkModeSwitch = dynamic(() => import('./DarkModeSwitch'))
 
 export default function Header() {
   return (
