@@ -5,7 +5,7 @@ export default function loading() {
     <div className="flex justify-center mt-16">
       <Image
         className="h-52"
-        src="/packman.svg"
+        src="packman.svg"
         alt="Loading..."
         width={500}
         height={300}
