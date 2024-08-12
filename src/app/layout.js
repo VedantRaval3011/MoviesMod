@@ -16,14 +16,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+      <Suspense fallback={<div>Loading...</div>}>
         <Providers>
-          <Suspense fallback={<div>Loading...</div>}>
             <Header/>
             <Navbar/>
             <SearchBar/>
             {children}
-          </Suspense>
-        </Providers>
+            </Providers>
+            </Suspense>
       </body>
     </html>
   );
