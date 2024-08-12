@@ -15,7 +15,7 @@ export default async function page({params}) {
   return (
     <div>
         {results.length === 0  && <div className="flex justify-center mt-56">
-            <h1 >No Result found for the keyword: <span className="dark:text-amber-600 text-amber-300">"{searchItem}"</span></h1>
+            <h1 >No Result found for the keyword: <span className="dark:text-amber-600 text-amber-300">{searchItem}</span></h1>
 
             </div> }
         {results && <Results results={results} />}
